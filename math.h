@@ -5,4 +5,6 @@
 #ifndef DEV04_MATH_H
 #define DEV04_MATH_H
 
+
+//firs function would be an exponent.
 #endif //DEV04_MATH_H
