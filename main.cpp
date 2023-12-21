@@ -17,6 +17,7 @@ private:
     int sp;
     float exp = 0;
     string location = "Home City";
+    string gender = "null";
 
 public:
 
@@ -77,6 +78,14 @@ public:
         return this->location;
     }
 
+    void setGender(string gender){
+        this->gender=gender;
+    }
+
+    string getGender(){
+        return this->gender;
+    }
+
     void toString(){
         printf("=========User Info.==========\n");
         cout<<"Username: "<<name<<endl;
@@ -85,6 +94,7 @@ public:
         cout<<"SP: "<<sp<<endl;
         cout<<"EXP: "<<exp<<endl;
         cout<<"Location: "<<getLocation()<<endl;
+        cout<<"Gender: "<<getGender()<<endl;
         printf("=============================\n");
     }
 
@@ -101,6 +111,7 @@ int main() {
     Player user;
 
     user.player("Toma",5,400,300,0);
+    user.setGender("Male");
 
     user.toString();
 
