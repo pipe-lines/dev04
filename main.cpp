@@ -107,6 +107,16 @@ namespace U{
     }
 }
 
+namespace K{
+
+    Player player;
+
+    void showUserName(string name){
+        player.setName(name);
+        cout<<"Username: "<< name <<endl;
+    }
+}
+
 int main() {
     Player user;
 
@@ -116,6 +126,8 @@ int main() {
     user.toString();
 
     U::showUserNextLevel(user.getLevel());
+
+    K::showUserName("Trigger");
 
 
     return 0;
